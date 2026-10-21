@@ -1,0 +1,17 @@
+name: ert
+channels:
+  - gimli
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pygimli=1.5.5
+  - numpy=1.26
+  - scipy
+  - matplotlib=3.8
+  - pandas
+  - tetgen
+  # el nucleo de PyGIMLi para Linux necesita SuiteSparse 5 (con la 7 no carga)
+  - suitesparse=5
+  - libblas=*=*openblas
+  - ipykernel
+  - ipywidgets
